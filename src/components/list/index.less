@@ -1,0 +1,97 @@
+@List2css:list2;
+@List3css:list3;
+@List4css:list4;
+@Imagebox2:Imagebox2;
+@Hotsellers:Hotsellers;
+  .life-list-img{
+    width:140px !important;
+    height:140px !important;
+  }
+
+.@{List2css}-box{
+  display: flex;
+  justify-content: space-between;
+  &-left,&-right{
+    width: 48%;
+  }
+  & img{
+    width: 100%;
+    height: 180px;
+  }
+}
+.@{List2css}-box-text{
+  font-size: 26px;
+  white-space:normal;
+  &-type{
+    padding-right: 20px;
+    color:#ff4500;
+  }
+}
+.@{List3css}-box-top{
+  height: 280px;
+  position: relative;
+  & img{
+    width:100% ;
+    height:100% ;
+  }
+  &-text{
+    position: absolute;
+    left: 0;
+    color: #fff;
+    background: #353030;
+    padding: 5px 20px;
+    font-size: 20px;
+  }
+}
+.@{List4css}-box{
+  display: flex;
+  justify-content: space-between;
+}
+.@{Imagebox2}-box-content{
+  width: 90%;
+   height: 180px;
+  position: relative;
+  & img{
+    width: 100%;
+    height: 100%;
+  }
+  &-text{
+    position: absolute;
+    left:0;
+    color: #fff;
+    background: #353030;
+    padding: 5px 20px;
+    font-size: 20px;
+  }
+
+}
+
+.@{Imagebox2}-box-content-details{
+  font-size: 22px;
+  white-space:normal;
+}
+.@{Hotsellers}-box-content{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  &-left,&-right{
+    width: 46%;
+  }
+  & img{
+    width: 100%;
+    height: 260px;
+  }
+  &-title{
+    font-size: 26px;
+  }
+  &-price{
+    font-size: 22px;
+    color: red;
+    text-align: center;
+  }
+  &-sold{
+    font-size: 22px;
+    color: #888;
+    text-align: center;
+  }
+}
